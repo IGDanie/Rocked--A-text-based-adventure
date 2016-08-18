@@ -1,6 +1,6 @@
 @echo off
 title Rocked
-color 0c
+color 0f
 
 echo.
 echo                   000000 000000 000000 000000 0  000 000000 00000
@@ -10,12 +10,14 @@ echo                   0 00   0    0 0    0 0      0 000  0      0    0
 echo                   0   00 000000 000000 000000 0  000 000000 00000
 echo.
 echo                           A TEXT BASED GAME, PLEASE WAIT...
-ping localhost -n 5 >nul
-:Before
+ping localhost -n 3 >nul
+
+:before
 cls
 echo Before the game begins please enter your desired name then click enter.
 echo. 
 set /p name=
+
 :startup
 cls
 echo. 
@@ -32,8 +34,6 @@ set /p input0=Set Command:
 if %input0%==1 goto leftdoor1
 if %input0%==2 goto rightdoor1
 if %input0%==3 goto gameover
-goto startup
-:observe1
 
 :gameover
 cls
@@ -53,11 +53,9 @@ echo 1.)Start again!
 echo 2.)Close the game!
 echo.
 set /p input0=Set Command:
-if %input0%==1 goto startup
+if %input0%==1 goto before
 if %input0%==2 goto killgame
 
-goto startup
-:observe2
 
 :killgame
 ping localhost -n 1 >nul
