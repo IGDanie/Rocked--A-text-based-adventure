@@ -12,3 +12,8 @@ echo.
 echo                           A TEXT BASED GAME, PLEASE WAIT...
 ping localhost -n 5 >nul
 :Before
+cls
+echo Before the game begins please enter your desired name.
+echo. 
+set /p name=
+:startup
