@@ -18,7 +18,7 @@ echo Before the game begins please enter your desired name then click enter.
 echo. 
 set /p name=
 
-:startup
+:room1
 cls
 echo. 
 echo You awake in a small gloomy room. Around you is a door on the left, a door on the right and deep dark hole right in front of you.
@@ -51,12 +51,19 @@ if %input0%==1 goto rightdoor1
 if %input0%==2 goto gameover
 if %input0%==3 goto gameover
 
+:rightdoor1
+cls
+echo.
+echo The doors unlocked! By chance or on purpose though?
 
+echo (type the number of your choice then enter)
 
-
-
-
-
+echo.
+echo 1.)Dont enter the door and go back.
+echo 2.)Continue on through the door.
+set /p input0=Set Command:
+if %input0%==1 goto room1
+if %input0%==2 goto room2
 
 :gameover
 cls
