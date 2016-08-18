@@ -34,6 +34,7 @@ set /p input0=Set Command:
 if %input0%==1 goto leftdoor1
 if %input0%==2 goto rightdoor1
 if %input0%==3 goto gameover
+if %input0%==4 goto cheat
 
 :leftdoor1
 cls
@@ -64,6 +65,11 @@ echo 2.)Continue on through the door.
 set /p input0=Set Command:
 if %input0%==1 goto room1
 if %input0%==2 goto room2
+
+:cheat
+cls
+echo.
+pause
 
 :gameover
 cls
