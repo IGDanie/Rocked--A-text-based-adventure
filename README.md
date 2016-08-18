@@ -6,4 +6,4 @@ Controls are simple. Simply enter in the option number to advance.
 
 Created by, Daniel Parr.
 
-Current Version 0.6
+Current Version 0.8A
