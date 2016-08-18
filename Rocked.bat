@@ -28,16 +28,39 @@ echo (type the number of your choice then enter)
 echo.
 echo 1.)Check the left door.
 echo 2.)Check the right door.
-echo 3.)Jump down the deep dark hole.
+echo 3.)Jump down the deep dark hole full of rocks.
 echo.
 set /p input0=Set Command:
 if %input0%==1 goto leftdoor1
 if %input0%==2 goto rightdoor1
 if %input0%==3 goto gameover
 
+:leftdoor1
+cls
+echo.
+echo Ah! The door seems to be locked! Try something else!
+
+echo (type the number of your choice then enter)
+
+echo.
+echo 1.)Go back and try the right door.
+echo 2.)Try jumping down the deep dark hole.
+echo 3.)Give up and beat yourself to death with a rock that has presented itself on the floor.
+set /p input0=Set Command:
+if %input0%==1 goto rightdoor1
+if %input0%==2 goto gameover
+if %input0%==3 goto gameover
+
+
+
+
+
+
+
+
 :gameover
 cls
-echo        Oh no! Your dead! Dont fall for the same mistake twice! Try again!
+echo        Oh no! Your dead from rocks! Dont fall for the same mistake twice! Try again!
 echo.
 echo.
 echo            000000 000000 0       0 000000    00000 0   0 000000 00000
