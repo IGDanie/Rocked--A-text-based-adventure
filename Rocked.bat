@@ -21,7 +21,9 @@ set /p name=
 :room1
 cls
 echo. 
-echo You awake in a small gloomy room. Around you is a door on the left, a door on the right and deep dark hole right in front of you.
+echo You awake in a small gloomy room. 
+ping localhost -n 2 >nul
+echo Around you is a door on the left, a door on the right and deep dark hole right in front of you.
 ping localhost -n 2 >nul 
 
 echo.
@@ -34,7 +36,7 @@ set /p input0=Set Command:
 if %input0%==1 goto leftdoor1
 if %input0%==2 goto rightdoor1
 if %input0%==3 goto gameover
-if %input0%==4 goto cheat
+if %input0%==4 goto room2
 
 :leftdoor1
 cls
@@ -55,7 +57,9 @@ if %input0%==3 goto gameover
 :rightdoor1
 cls
 echo.
-echo The doors unlocked! By chance or on purpose though?
+echo The doors unlocked! 
+ping localhost -n 2 >nul
+echo By chance or on purpose though?
 ping localhost -n 2 >nul 
 
 echo.
@@ -66,7 +70,7 @@ set /p input0=Set Command:
 if %input0%==1 goto room1
 if %input0%==2 goto room2
 
-:cheat
+:room2
 cls
 echo  You enter through the door...
 ping localhost -n 2 >nul 
