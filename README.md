@@ -25,4 +25,4 @@ Features/Planned Features:
 
 Created by, Daniel Parr.
 
-Current Version 0.39
+Current Version 0.41B
