@@ -165,24 +165,9 @@ echo.
 
 echo 1.) Explore.
 echo 2.) Go back through the door.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto explore
 if %input0%==2 goto locked
-
-//new area no need to go back before here
-:headmountaines
-cls
-echo You start to head towards the mountains and you come accross a camp...
-ping localhost -n 2 >nul
-echo What should we do?
-ping localhost -n 2 >nul
-echo.
-
-echo 1.) Have a look around the camp.
-echo 2.) Ignore the camp and continue on towards the mountain.
-set /p input0=Set Command:
-if %input0%==1 goto explorecamp
-if %input0%==2 goto continuemount
 
 :figureout2
 cls
@@ -196,6 +181,77 @@ echo 1.)Head towards the mountains.
 set /p input0=What should we do?:
 if %input0%==1 goto headmountaines
 
+//new area no need to go back before here
+:headmountaines
+cls
+echo You start to head towards the mountains and you come accross a camp...
+ping localhost -n 2 >nul
+echo What should we do?
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Have a look around the camp.
+echo 2.) Ignore the camp and continue on towards the mountain.
+set /p input0=What should we do?:
+if %input0%==1 goto explorecamp
+if %input0%==2 goto continuemount
+
+:explorecamp
+cls
+echo You start to look around the camp...
+ping localhost -n 2 >nul
+echo Its all messy and covered in rotten flesh...
+ping localhost -n 2 >nul
+echo You notice a bed.
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Have a look at the bed.
+echo 2.) Ignore the bed and continue on towards the mountain.
+set /p input0=What should we do?:
+if %input0%==1 goto lookbed
+if %input0%==2 goto continuemount
+
+:lookbed
+cls
+echo You walk slowly towards the bed...
+ping localhost -n 2 >nul
+echo and notice something is under the covers...
+ping localhost -n 2 >nul
+echo luckily whatever it is seems to be asleep!
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Fuck this shit. Wake what ever it is the fuck up.
+echo 2.) Dont wake what ever it is up and walk away back towards the mountain.
+set /p input0=What should we do?:
+if %input0%==1 goto wakeup
+if %input0%==2 goto continuemount
+
+:wakeup
+cls
+echo You grab the cover and pull it back to reveal a...
+ping localhost -n 2 >nul
+echo ROCK! But this isnt any rock its a real living rock!
+ping localhost -n 2 >nul
+echo Looks like its angry and now looking for a fight!
+ping localhost -n 2 >nul
+echo You have a 80% chance to win this fight!
+ping localhost -n 2 >nul
+echo.
+
+echo Pick a number between 1-10 quick! Two of the numbers wil kill you!
+set /p input0=What number will you pick!?!?:
+if %input0%==1 goto winfight1
+if %input0%==2 goto winfight1
+if %input0%==3 goto winfight1
+if %input0%==4 goto beddeathrock
+if %input0%==5 goto winfight1
+if %input0%==6 goto winfight1
+if %input0%==7 goto winfight1
+if %input0%==8 goto beddeathrock
+if %input0%==9 goto winfight1
+if %input0%==10 goto winfight1
 
 //gameover areas
 :gameoverbeatself
