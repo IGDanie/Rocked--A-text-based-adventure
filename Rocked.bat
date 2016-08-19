@@ -253,6 +253,7 @@ if %input0%==8 goto beddeathrock
 if %input0%==9 goto winfight1
 if %input0%==10 goto winfight1
 
+
 //gameover areas
 :gameoverbeatself
 cls
@@ -334,6 +335,32 @@ set /p input0=What should we do?:
 if %input0%==1 goto before
 if %input0%==2 goto killgame
 
+:beddeathrock
+cls
+echo You attempt to slash the rock with your hand...
+ping localhost -n 2 >nul 
+echo As expected, that didnt go well at all.
+ping localhost -n 2 >nul 
+echo You get crushed to death by the rock.
+ping localhost -n 2 >nul 
+echo.
+echo.
+echo            000000 000000 0       0 000000    00000 0   0 000000 00000
+echo            0      0    0 00     00 0         0   0 0   0 0      0   0
+echo            0  000 000000 0 0   0 0 00000     0   0 0   0 00000  00000
+echo            0    0 0    0 0  0 0  0 0         0   0  0 0  0      0  0
+echo            000000 0    0 0   0   0 000000    00000   0   000000 0   0 
+echo.
+echo.
+
+echo.
+ping localhost -n 2 >nul 
+echo 1.)Start again!
+echo 2.)Close the game!
+echo.
+set /p input0=What should we do?:
+if %input0%==1 goto before
+if %input0%==2 goto killgame
 
 :killgame
 ping localhost -n 1 >nul
