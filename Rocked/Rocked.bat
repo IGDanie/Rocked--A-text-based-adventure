@@ -100,6 +100,8 @@ echo Its cold... Theres snow beneath your feet...
 ping localhost -n 2 >nul 
 echo What should you do now?
 ping localhost -n 2 >nul 
+type image6.txt
+ping localhost -n 2 >nul 
 echo.
 
 echo 1.)Make a snow angel... because why not...
@@ -139,6 +141,8 @@ echo You turn round and head towards the door...
 ping localhost -n 2 >nul 
 echo Before you reach the door it slams shut. Guess theres no turning back now.
 ping localhost -n 2 >nul 
+type image4.txt
+ping localhost -n 2 >nul 
 echo.
 
 echo 1.) Try and figure out where you are.
@@ -152,6 +156,8 @@ cls
 echo You turn round and head towards the door...
 ping localhost -n 2 >nul 
 echo Before you reach the door it slams shut. Guess theres no turning back now.
+ping localhost -n 2 >nul 
+type image4.txt
 ping localhost -n 2 >nul 
 echo.
 
