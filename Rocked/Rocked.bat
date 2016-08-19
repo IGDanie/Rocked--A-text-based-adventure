@@ -54,12 +54,14 @@ set /p input0=What should we do?:
 if %input0%==1 goto leftdoor1
 if %input0%==2 goto rightdoor1
 if %input0%==3 goto gameover
-if %input0%==4 goto room2
+if %input0%==4 goto explore
 
 :leftdoor1
 cls
 echo.
 echo Ah! The door seems to be locked! Try something else!
+ping localhost -n 2 >nul 
+type image4.txt
 ping localhost -n 2 >nul 
 
 echo.
@@ -78,6 +80,8 @@ echo.
 echo The doors unlocked! 
 ping localhost -n 2 >nul
 echo By chance or on purpose though?
+ping localhost -n 2 >nul 
+type image5.txt
 ping localhost -n 2 >nul 
 
 echo.
@@ -117,6 +121,9 @@ ping localhost -n 2 >nul
 echo Apart from that nothing new. What now? 
 ping localhost -n 2 >nul 
 echo.
+type image3.txt
+echo.
+ping localhost -n 2 >nul 
 
 echo 1.) Try and figure out where you are.
 echo 2.) Head towards the mountains
