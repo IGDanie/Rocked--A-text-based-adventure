@@ -287,6 +287,7 @@ echo Rethinking your strategy?
 ping localhost -n 2 >nul 
 echo What shoud we do instead?
 ping localhost -n 2 >nul 
+echo.
 
 echo 1.) Look for safe passage through the mountain.
 echo 2.) Look for a way around the mountain.
@@ -297,8 +298,34 @@ if %input0%==2 goto mountainaround
 if %input0%==3 goto mountainover
 
 :mountainaround
+cls
+echo You decide to look for a way around the montain rather then over or through it.
+ping localhost -n 2 >nul 
+echo Looks like you can go around but it will take days!
+ping localhost -n 2 >nul 
+echo Is it really worth it? You dont have much food or water.
+ping localhost -n 2 >nul 
+echo.
+
+echo 1.) Continue to go around the mountain even though you have near no food or water.
+echo 2.) Go back and rethink your options.
+set /p input0=What should we do?:
+if %input0%==2 goto continuemountrechoose
+if %input0%==1 goto Continuearoundmountain
 
 :mountainover
+cls
+echo You can see a way straight over the mountain! 
+ping localhost -n 2 >nul
+echo It looks reasonably safe, but we wont know how safe till we are up there.
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Continue up the mountain not knowing how safe it is.
+echo 2.) Go back and rethink your options.
+set /p input0=What should we do?:
+if %input0%==2 goto continuemountrechoose
+if %input0%==1 goto overthemountain
 
 :mountainthrough
 cls
@@ -310,17 +337,23 @@ echo They both have signs. One says "dangerous! beware!" and the other says...
 ping localhost -n 2 >nul 
 echo Scenic route. What one will you take?
 ping localhost -n 2 >nul 
+echo.
 
 echo 1.) Take the dangerous route. #thuglife
 echo 2.) Take the scenic route.
 echo 3.) Change your mind and have a look at the other options to get by this mountain.
-
+set /p input0=What should we do?:
 if %input0%==1 goto dangerousroutethrough
 if %input0%==2 goto scenicroutethrough
 if %input0%==3 goto continuemountrechoose
 
 :dangerousroutethrough
+
 :scenicroutethrough
+
+:Continuearoundmountain
+
+:overthemountain
 
 //gameover areas -----------------------------------------------------------------------
 :gameoverbeatself
