@@ -10,6 +10,8 @@ echo                   0 00   0    0 0    0 0      0 000  0      0    0
 echo                   0   00 000000 000000 000000 0  000 000000 00000
 echo.
 echo                           A TEXT BASED GAME, PLEASE WAIT...
+echo                               Created by Daniel Parr
+echo                                       Enjoy!
 ping localhost -n 3 >nul
 
 :before
