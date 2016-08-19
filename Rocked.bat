@@ -1,6 +1,6 @@
 @echo off
 title Rocked - A Text Based Adventure By Daniel Parr
-color 0f
+color 0a
 
 echo.
 echo                       000000 000000 000000 0  000 000000 00000
@@ -397,3 +397,15 @@ if %input0%==2 goto killgame
 
 :killgame
 ping localhost -n 1 >nul
+
+:win
+cls
+color 0a
+echo.
+echo.
+echo               0   0  00000  0   0    0   0   0  00000  0   0
+echo                0 0   0   0  0   0    0   0   0    0    00  0
+echo                 0    0   0  0   0    0   0   0    0    0 0 0
+echo                 0    0   0  0   0     0 0 0 0     0    0  00
+echo                 0    00000  00000      0   0    00000  0   0
+echo.
