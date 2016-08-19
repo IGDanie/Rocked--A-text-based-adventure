@@ -1,4 +1,4 @@
-# Rocked a text based adventure game!
+# Rocked, a text based adventure game!
 
 A very simple and very wierd/random text based adventure game. 
 Live by the rocks, die by the rocks.
