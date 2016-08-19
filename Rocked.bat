@@ -123,14 +123,65 @@ echo 1.) Try and figure out where you are.
 echo 2.) Head towards the mountins
 echo 3.) Go back through the door.
 set /p input0=Set Command:
-if %input0%==1 goto figureout
+if %input0%==1 goto figureout2
 if %input0%==2 goto headmountines
-if %input0%==3 goto locked
+if %input0%==3 goto locked2
+
+:locked2
+cls
+echo You turn round and head towards the door...
+ping localhost -n 2 >nul 
+echo Before you reach the door it slams shut. Guess theres no turning back now.
+ping localhost -n 2 >nul 
+echo.
+
+echo 1.) Try and figure out where you are.
+echo 2.) Head towards the mountins
+set /p input0=Set Command:
+if %input0%==1 goto figureout2
+if %input0%==2 goto headmountines
 
 :locked
-cls
-echo 
+cls 
+echo You turn round and head towards the door...
+ping localhost -n 2 >nul 
+echo Before you reach the door it slams shut. Guess theres no turning back now.
+ping localhost -n 2 >nul 
+echo.
 
+echo 1.) Try and Figure out where you are.
+echo 2.) Explore.
+set /p input0=Set Command:
+if %input0%==1 goto figureout
+if %input0%==2 goto explore
+
+:figureout
+cls
+echo You look around wondering how you got here and where you are...
+ping localhost -n 2 >nul
+echo You still have no idea where you are maybe soon you will.
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Explore.
+echo 2.) Go back through the door.
+set /p input0=Set Command:
+if %input0%==1 goto explore
+if %input0%==2 goto locked
+
+:headmountines
+
+:figureout2
+cls
+echo You look around wondering how you got here and where you are...
+ping localhost -n 2 >nul
+echo You still have no idea where you are maybe soon you will.
+ping localhost -n 2 >nul
+echo.
+
+echo 1.)Head towards the mountins.
+set /p input0=Set Command:
+if %input0%==1 goto headmountines
 
 
 //gameover areas
