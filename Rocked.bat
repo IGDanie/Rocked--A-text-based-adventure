@@ -8,17 +8,34 @@ echo                   0    0 0    0 0    0 0      0 000  0      0    0
 echo                   000000 0    0 0    0 0      000    000000 0    0
 echo                   0 00   0    0 0    0 0      0 000  0      0    0
 echo                   0   00 000000 000000 000000 0  000 000000 00000
-echo.
+echo.    
+ping localhost -n 2 >nul
+echo                          LIVE BY THE ROCK, DIE BY THE ROCK
+ping localhost -n 2 >nul
 echo                           A TEXT BASED GAME, PLEASE WAIT...
+ping localhost -n 2 >nul
 echo                               Created by Daniel Parr
+ping localhost -n 2 >nul
 echo                                       Enjoy!
 ping localhost -n 3 >nul
+echo.                                                         
+echo                                    ----Tips----
+echo              Do not use the mouse to click as will cause game to bug out.
+echo                               Only use the keyboard.
+ping localhost -n 3 >nul
+echo                        Everything is not as fun as it seems
+ping localhost -n 4 >nul
+echo.
+echo                   Enter the number "1" and click enter to start!
+echo.
+set /p input0=Time to Start the adventure!:
+if %input0%==1 goto before
 
 :before
 cls
 echo Before the game begins please enter your desired name then click enter.
 echo. 
-set /p name=
+set /p Enter your name adventurer!=
 
 :room1
 cls
