@@ -268,6 +268,28 @@ set /p input0=What should we do?:
 if %input0%==2 goto continuemount
 
 :continuemount
+cls
+echo You continue on your route towards the mountain...
+ping localhost -n 2 >nul 
+echo everything is still covered in rocks and snow.
+ping localhost -n 2 >nul 
+echo Eventually you arrive at the bottom of the mountain.
+ping localhost -n 2 >nul 
+echo.
+
+echo 1.) Look for safe passage through the mountain.
+echo 2.) Look for a way around the mountain.
+echo 3.) Look for a way over the mountain.
+set /p input0=What should we do?:
+if %input0%==1 goto mountainthrough
+if %input0%==2 goto mountainaround
+if %input0%==3 goto mountainover
+
+:mountainthrough
+
+:mountainaround
+
+:mountainover
 
 //gameover areas
 :gameoverbeatself
