@@ -3,11 +3,11 @@ title Rocked - A Text Based Adventure By Daniel Parr
 color 0f
 
 echo.
-echo                   000000 000000 000000 000000 0  000 000000 00000
-echo                   0    0 0    0 0    0 0      0 000  0      0    0
-echo                   000000 0    0 0    0 0      000    000000 0    0
-echo                   0 00   0    0 0    0 0      0 000  0      0    0
-echo                   0   00 000000 000000 000000 0  000 000000 00000
+echo                       000000 000000 000000 0  000 000000 00000
+echo                       0    0 0    0 0      0 000  0      0    0
+echo                       000000 0    0 0      000    000000 0    0
+echo                       0 00   0    0 0      0 000  0      0    0
+echo                       0   00 000000 000000 0  000 000000 00000
 echo.    
 ping localhost -n 2 >nul
 echo                          LIVE BY THE ROCK, DIE BY THE ROCK
@@ -51,7 +51,7 @@ echo 1.)Check the left door.
 echo 2.)Check the right door.
 echo 3.)Jump down the deep dark hole full of rocks.
 echo.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto leftdoor1
 if %input0%==2 goto rightdoor1
 if %input0%==3 goto gameover
@@ -68,7 +68,7 @@ echo (type the number of your choice then enter)
 echo 1.)Go back and try the right door.
 echo 2.)Try jumping down the deep dark hole.
 echo 3.)Give up and beat yourself to death with a rock that has presented itself on the floor.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto rightdoor1
 if %input0%==2 goto gameover
 if %input0%==3 goto gameoverbeatself
@@ -85,7 +85,7 @@ echo.
 echo (type the number of your choice then enter)
 echo 1.)Dont enter the door and go back.
 echo 2.)Continue on through the door.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto room1
 if %input0%==2 goto room2
 
@@ -103,7 +103,7 @@ echo 1.)Make a snow angel... because why not...
 echo 2.)Figure out where you are.
 echo 3.)Explore.
 echo 4.)Go back through the door.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto gameoversnowangel
 if %input0%==2 goto figureout
 if %input0%==3 goto explore
@@ -122,7 +122,7 @@ echo.
 echo 1.) Try and figure out where you are.
 echo 2.) Head towards the mountins
 echo 3.) Go back through the door.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto figureout2
 if %input0%==2 goto headmountines
 if %input0%==3 goto locked2
@@ -137,7 +137,7 @@ echo.
 
 echo 1.) Try and figure out where you are.
 echo 2.) Head towards the mountins
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto figureout2
 if %input0%==2 goto headmountines
 
@@ -151,7 +151,7 @@ echo.
 
 echo 1.) Try and Figure out where you are.
 echo 2.) Explore.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto figureout
 if %input0%==2 goto explore
 
@@ -180,7 +180,7 @@ ping localhost -n 2 >nul
 echo.
 
 echo 1.)Head towards the mountins.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto headmountines
 
 
@@ -207,7 +207,7 @@ ping localhost -n 2 >nul
 echo 1.)Start again!
 echo 2.)Close the game!
 echo.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto before
 if %input0%==2 goto killgame
 
@@ -234,7 +234,7 @@ ping localhost -n 2 >nul
 echo 1.)Start again!
 echo 2.)Close the game!
 echo.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto before
 if %input0%==2 goto killgame
 
@@ -261,7 +261,7 @@ ping localhost -n 2 >nul
 echo 1.)Start again!
 echo 2.)Close the game!
 echo.
-set /p input0=Set Command:
+set /p input0=What should we do?:
 if %input0%==1 goto before
 if %input0%==2 goto killgame
 
