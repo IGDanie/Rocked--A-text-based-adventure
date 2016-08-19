@@ -253,6 +253,21 @@ if %input0%==8 goto beddeathrock
 if %input0%==9 goto winfight1
 if %input0%==10 goto winfight1
 
+:winfight1
+cls
+echo You attempt to slash the rock with your hand...
+ping localhost -n 2 >nul 
+echo By some miracle you manage to break the rock in half.
+ping localhost -n 2 >nul 
+echo How could you... You cruel bastard... Lets just go.
+ping localhost -n 2 >nul 
+echo.
+
+echo 1.) Contine towards the mountain now the rock is gone.
+set /p input0=What should we do?:
+if %input0%==2 goto continuemount
+
+:continuemount
 
 //gameover areas
 :gameoverbeatself
