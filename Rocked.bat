@@ -40,6 +40,8 @@ echo Greetings %Enter your name adventurer!%. You awake in a small gloomy room.
 ping localhost -n 2 >nul
 echo Around you is a door on the left, a door on the right and deep dark hole right in front of you.
 ping localhost -n 2 >nul 
+type image1.txt
+ping localhost -n 2 >nul
 
 echo.
 echo (type the number of your choice then enter)
