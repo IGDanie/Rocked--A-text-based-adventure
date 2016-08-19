@@ -113,18 +113,18 @@ if %input0%==4 goto locked
 cls
 echo You start to look around to see what you can find...
 ping localhost -n 2 >nul 
-echo In the distance you see some mountins you orgionally couldnt see.
+echo In the distance you see some mountains you orgionally couldnt see.
 ping localhost -n 2 >nul 
 echo Apart from that nothing new. What now? 
 ping localhost -n 2 >nul 
 echo.
 
 echo 1.) Try and figure out where you are.
-echo 2.) Head towards the mountins
+echo 2.) Head towards the mountains
 echo 3.) Go back through the door.
 set /p input0=What should we do?:
 if %input0%==1 goto figureout2
-if %input0%==2 goto headmountines
+if %input0%==2 goto headmountaines
 if %input0%==3 goto locked2
 
 :locked2
@@ -136,10 +136,10 @@ ping localhost -n 2 >nul
 echo.
 
 echo 1.) Try and figure out where you are.
-echo 2.) Head towards the mountins
+echo 2.) Head towards the mountains
 set /p input0=What should we do?:
 if %input0%==1 goto figureout2
-if %input0%==2 goto headmountines
+if %input0%==2 goto headmountaines
 
 :locked
 cls 
@@ -169,7 +169,20 @@ set /p input0=Set Command:
 if %input0%==1 goto explore
 if %input0%==2 goto locked
 
-:headmountines
+//new area no need to go back before here
+:headmountaines
+cls
+echo You start to head towards the mountains and you come accross a camp...
+ping localhost -n 2 >nul
+echo What should we do?
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Have a look around the camp.
+echo 2.) Ignore the camp and continue on towards the mountain.
+set /p input0=Set Command:
+if %input0%==1 goto explorecamp
+if %input0%==2 goto continuemount
 
 :figureout2
 cls
@@ -179,9 +192,9 @@ echo You still have no idea where you are maybe soon you will.
 ping localhost -n 2 >nul
 echo.
 
-echo 1.)Head towards the mountins.
+echo 1.)Head towards the mountains.
 set /p input0=What should we do?:
-if %input0%==1 goto headmountines
+if %input0%==1 goto headmountaines
 
 
 //gameover areas
