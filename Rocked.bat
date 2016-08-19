@@ -281,13 +281,48 @@ if %input0%==1 goto mountainthrough
 if %input0%==2 goto mountainaround
 if %input0%==3 goto mountainover
 
-:mountainthrough
+:continuemountrechoose
+cls
+echo Rethinking your strategy? 
+ping localhost -n 2 >nul 
+echo What shoud we do instead?
+ping localhost -n 2 >nul 
+
+echo 1.) Look for safe passage through the mountain.
+echo 2.) Look for a way around the mountain.
+echo 3.) Look for a way over the mountain.
+set /p input0=What should we do?:
+if %input0%==1 goto mountainthrough
+if %input0%==2 goto mountainaround
+if %input0%==3 goto mountainover
 
 :mountainaround
 
 :mountainover
 
-//gameover areas
+:mountainthrough
+cls
+echo You decide to look for a way through the mountain rather then around or over it.
+ping localhost -n 2 >nul 
+echo Now presented in front of you is two caves...
+ping localhost -n 2 >nul 
+echo They both have signs. One says "dangerous! beware!" and the other says...
+ping localhost -n 2 >nul 
+echo Scenic route. What one will you take?
+ping localhost -n 2 >nul 
+
+echo 1.) Take the dangerous route. #thuglife
+echo 2.) Take the scenic route.
+echo 3.) Change your mind and have a look at the other options to get by this mountain.
+
+if %input0%==1 goto dangerousroutethrough
+if %input0%==2 goto scenicroutethrough
+if %input0%==3 goto continuemountrechoose
+
+:dangerousroutethrough
+:scenicroutethrough
+
+//gameover areas -----------------------------------------------------------------------
 :gameoverbeatself
 cls
 echo Ah its as if by some miricale that a rock has appeared...
@@ -394,10 +429,12 @@ echo.
 set /p input0=What should we do?:
 if %input0%==1 goto before
 if %input0%==2 goto killgame
+//gameover areas -----------------------------------------------------------------------
 
 :killgame
 ping localhost -n 1 >nul
 
+//win areas ----------------------------------------------------------------------------
 :win
 cls
 color 0a
@@ -409,3 +446,4 @@ echo                 0    0   0  0   0    0   0   0    0    0 0 0
 echo                 0    0   0  0   0     0 0 0 0     0    0  00
 echo                 0    00000  00000      0   0    00000  0   0
 echo.
+//win areas ----------------------------------------------------------------------------
