@@ -1,5 +1,5 @@
 @echo off
-title Rocked
+title Rocked - A Text Based Adventure By Daniel Parr
 color 0f
 
 echo.
