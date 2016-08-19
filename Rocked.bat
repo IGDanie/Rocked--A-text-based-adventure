@@ -19,9 +19,9 @@ ping localhost -n 2 >nul
 echo                                       Enjoy!
 ping localhost -n 2 >nul
 echo.                                                         
-echo                                    ----Tip----
-echo       Do not use the mouse to click as will cause game to bug out and loose progress.
-echo                               Only use the keyboard.
+echo                                     ----Tip----
+echo        Do not use the mouse to click as will cause game to bug out and loose progress.
+echo                                Only use the keyboard.
 ping localhost -n 4 >nul
 echo.
 
