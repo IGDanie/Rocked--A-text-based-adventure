@@ -3,11 +3,11 @@ title Rocked - A Text Based Adventure By Daniel Parr
 color 0a
 
 echo.
-echo                       000000 000000 000000 0  000 000000 00000
+echo                       000000 000000 000000 0   00 000000 00000
 echo                       0    0 0    0 0      0 000  0      0    0
 echo                       000000 0    0 0      000    000000 0    0
 echo                       0 00   0    0 0      0 000  0      0    0
-echo                       0   00 000000 000000 0  000 000000 00000
+echo                       0   00 000000 000000 0   00 000000 00000
 echo.    
 ping localhost -n 2 >nul
 echo                          LIVE BY THE ROCK, DIE BY THE ROCK
@@ -19,11 +19,9 @@ ping localhost -n 2 >nul
 echo                                       Enjoy!
 ping localhost -n 2 >nul
 echo.                                                         
-echo                                    ----Tips----
+echo                                    ----Tip----
 echo       Do not use the mouse to click as will cause game to bug out and loose progress.
 echo                               Only use the keyboard.
-ping localhost -n 2 >nul
-echo                        Everything is not as fun as it seems
 ping localhost -n 4 >nul
 echo.
 
@@ -31,6 +29,9 @@ echo.
 cls
 echo Before the game begins please enter your desired name then click enter.
 echo. 
+ping localhost -n 2 >nul
+type image2.txt
+ping localhost -n 2 >nul
 set /p Enter your name adventurer!=
 
 :room1
