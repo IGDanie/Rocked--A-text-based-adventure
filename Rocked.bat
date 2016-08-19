@@ -17,19 +17,15 @@ ping localhost -n 2 >nul
 echo                               Created by Daniel Parr
 ping localhost -n 2 >nul
 echo                                       Enjoy!
-ping localhost -n 3 >nul
+ping localhost -n 2 >nul
 echo.                                                         
 echo                                    ----Tips----
-echo              Do not use the mouse to click as will cause game to bug out.
+echo       Do not use the mouse to click as will cause game to bug out and loose progress.
 echo                               Only use the keyboard.
-ping localhost -n 3 >nul
+ping localhost -n 2 >nul
 echo                        Everything is not as fun as it seems
 ping localhost -n 4 >nul
 echo.
-echo                   Enter the number "1" and click enter to start!
-echo.
-set /p input0=Time to Start the adventure!:
-if %input0%==1 goto before
 
 :before
 cls
