@@ -40,7 +40,7 @@ set /p Enter your name adventurer!=
 :room1
 cls
 echo. 
-echo You awake in a small gloomy room. 
+echo Greetings %Enter your name adventurer!%. You awake in a small gloomy room. 
 ping localhost -n 2 >nul
 echo Around you is a door on the left, a door on the right and deep dark hole right in front of you.
 ping localhost -n 2 >nul 
@@ -103,12 +103,35 @@ echo 1.)Make a snow angel... because why not...
 echo 2.)Figure out where you are.
 echo 3.)Explore.
 echo 4.)Go back through the door.
-echo.
 set /p input0=Set Command:
 if %input0%==1 goto gameoversnowangel
 if %input0%==2 goto figureout
-if %input0%==2 goto explore
-if %input0%==2 goto locked
+if %input0%==3 goto explore
+if %input0%==4 goto locked
+
+:explore
+cls
+echo You start to look around to see what you can find...
+ping localhost -n 2 >nul 
+echo In the distance you see some mountins you orgionally couldnt see.
+ping localhost -n 2 >nul 
+echo Apart from that nothing new. What now? 
+ping localhost -n 2 >nul 
+echo.
+
+echo 1.) Try and figure out where you are.
+echo 2.) Head towards the mountins
+echo 3.) Go back through the door.
+set /p input0=Set Command:
+if %input0%==1 goto figureout
+if %input0%==2 goto headmountines
+if %input0%==3 goto locked
+
+:locked
+cls
+echo 
+
+
 
 //gameover areas
 :gameoverbeatself
