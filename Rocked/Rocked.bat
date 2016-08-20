@@ -364,6 +364,18 @@ if %input0%==2 goto scenicroutethrough
 if %input0%==3 goto continuemountrechoose
 
 :dangerousroutethrough
+cls
+echo You head slowly into the cave marked dangerous...
+ping localhost -n 2 >nul 
+echo Everything it falling apart around you. Do you continue?
+ping localhost -n 2 >nul 
+echo.
+
+echo 1.) Yes, continue thorugh the cave.
+echo 2.) Dont continue and turn around.
+set /p input0=What should we do?:
+if %input0%==1 goto dangercontinue
+if %input0%==2 goto mountainthrough
 
 :scenicroutethrough
 
