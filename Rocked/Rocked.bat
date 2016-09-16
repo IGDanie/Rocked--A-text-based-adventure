@@ -349,7 +349,7 @@ echo You decide to look for a way through the mountain rather then around or ove
 ping localhost -n 2 >nul 
 echo Now presented in front of you is two caves...
 ping localhost -n 2 >nul 
-echo They both have signs. One says "dangerous! beware!" and the other says...
+echo They both have signs. One says "dangerous! beware!" and the other says scenic
 ping localhost -n 2 >nul 
 echo Scenic route. What one will you take?
 ping localhost -n 2 >nul 
@@ -378,6 +378,8 @@ if %input0%==1 goto dangercontinue
 if %input0%==2 goto mountainthrough
 
 :scenicroutethrough
+cls
+echo You decide to take the scenic route through the mountain 
 
 :Continuearoundmountain
 
