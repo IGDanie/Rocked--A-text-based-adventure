@@ -394,8 +394,19 @@ if %input0%==2 goto investpaintings
 if %input0%==3 goto catchbird
 
 
-
 :Continuearoundmountain
+cls
+echo You decide to continue around the mountain...
+ping localhost -n 2 >nul
+echo after a long time walking you arrive at a village.
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Visit the village.
+echo 2.) Ignore the village and continue on the path.
+set /p input=0What should we do?:
+if %input0%==1 goto villagevisit
+if %input0%==2 goto continuepathbyvillage
 
 :overthemountain
 
