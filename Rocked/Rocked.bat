@@ -512,6 +512,33 @@ echo.
 set /p input0=What should we do?:
 if %input0%==1 goto before
 if %input0%==2 goto killgame
+
+:dangercontinue
+cls
+echo You decide to continue along the dangerous route...
+ping localhost -n 2 >nul 
+echo slowly the cave is getting more and more dangerous with bit falling all around you...
+ping localhost -n 2 >nul
+echo all of a sudden the cave claspes in on top of you!
+ping localhost -n 2 >nul 
+echo.
+echo.
+echo            000000 000000 0       0 000000    00000 0   0 000000 00000
+echo            0      0    0 00     00 0         0   0 0   0 0      0   0
+echo            0  000 000000 0 0   0 0 00000     0   0 0   0 00000  00000
+echo            0    0 0    0 0  0 0  0 0         0   0  0 0  0      0  0
+echo            000000 0    0 0   0   0 000000    00000   0   000000 0   0 
+echo.
+echo.
+
+echo.
+ping localhost -n 2 >nul 
+echo 1.)Start again!
+echo 2.)Close the game!
+echo.
+set /p input0=What should we do?:
+if %input0%==1 goto before
+if %input0%==2 goto killgame
 //gameover areas -----------------------------------------------------------------------
 
 :killgame
