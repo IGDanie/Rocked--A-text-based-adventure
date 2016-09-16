@@ -409,10 +409,34 @@ if %input0%==1 goto villagevisit
 if %input0%==2 goto continuepathbyvillage
 
 :overthemountain
+cls
+echo You decide to continue by attempting to scale the mountain...
+ping localhost -n 2 >nul
+echo now presented in front of you is two possible ways...
+ping localhost -n 2 >nul
+echo One way seems like someone has been there recently and the other...
+ping localhost -n 2 >nul
+echo looks dangerous but seems no one has ever been this way.
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Route where someone has been previously.
+echo 2.) Route where no one has been before but dangerous.
+set /p input=0What should we do?:
+if %input0%==1 goto knownclimb
+if %input0%==2 goto unknownclimb
+
+:villagevisit
+
+:continuepathbyvillage
+
+:knownclimb
+
+:unknownclimb
 
 :investwaterfall
 
-:investpaintings
+:investpaintings 
 
 :catchbird
 
