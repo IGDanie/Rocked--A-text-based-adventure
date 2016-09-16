@@ -379,11 +379,31 @@ if %input0%==2 goto mountainthrough
 
 :scenicroutethrough
 cls
-echo You decide to take the scenic route through the mountain 
+echo You decide to take the scenic route through the mountain, 
+ping localhost -n 2 >nul
+echo everything just looks amazing! birds, cave paintings and a inside waterfall! 
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Investigate the waterfall.
+echo 2.) Investigste the cave paintings.
+echo 3.) Try and catch a bird.
+set /p input=0What should we do?:
+if %input0%==1 goto investwaterfall
+if %input0%==2 goto investpaintings
+if %input0%==3 goto catchbird
+
+
 
 :Continuearoundmountain
 
 :overthemountain
+
+:investwaterfall
+
+:investpaintings
+
+:catchbird
 
 //gameover areas -----------------------------------------------------------------------
 :gameoverbeatself
