@@ -457,6 +457,40 @@ if %input0%==1 goto sparklevillage
 if %input0%==2 goto continuepathbyvillage
 
 :sparklevillage
+cls
+echo You head forwards towards the sparkles to see what it is...
+ping localhost -n 2 >nul 2
+echo When you get there you notice the sparkle is coming from a chest...
+ping localhost -n 2 >nul 2 
+echo Unfortunately the chest has a coded padlock on it.
+ping localhost -n 2 >nul 2
+echo.
+
+echo 1.) Attempt to guess and unlock the chest.
+echo 2.) Exit the village and continue on the path.
+set /p input=0What should we do?:
+if %input0%==1 goto unlockchest
+if %input0%==2 goto continuepathbyvillage
+
+:unlockchest
+cls
+echo The chest has a two digit lock on it, that means from 00 to 99...
+ping localhost -n 2 >nul 2
+echo The chest also has some forgeign writing on it...
+ping localhost -n 2 >nul 2
+echo.
+
+echo 1.) Go and attempt to guess the code.
+echo 2.) Investigate the writing.
+echo 3.) Leave the chest and continue on path.
+set /p input=What should we do?:
+if %input0%==1 goto entercodechest
+if %input0%==2 goto writingchest
+if %input0%==3 goto continuepathbyvillage
+
+:entercodechest
+
+:chestwriting
 
 :continuepathbyvillage
 
