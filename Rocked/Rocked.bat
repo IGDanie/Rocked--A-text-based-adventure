@@ -480,7 +480,7 @@ echo The chest also has some forgeign writing on it...
 ping localhost -n 2 >nul 2
 echo.
 
-echo 1.) Go and attempt to guess the code.
+echo 1.) Go and attempt to guess the code. No going back.
 echo 2.) Investigate the writing.
 echo 3.) Leave the chest and continue on path.
 set /p input=What should we do?:
@@ -489,6 +489,113 @@ if %input0%==2 goto writingchest
 if %input0%==3 goto continuepathbyvillage
 
 :entercodechest
+cls
+echo Enter the code below between 00-99 to open the chest. 
+ping localhost -n 2 >nul 2
+echo (use double digits such as instead of 5 use 05)
+ping localhost -n 2 >nul 2
+echo.
+
+set/p input=Enter the code:
+if %input%== 01 goto chestloose
+if %input%== 02 goto chestloose
+if %input%== 03 goto chestloose
+if %input%== 04 goto chestloose
+if %input%== 05 goto chestloose
+if %input%== 06 goto chestloose
+if %input%== 07 goto chestloose
+if %input%== 08 goto chestloose
+if %input%== 09 goto chestloose
+if %input%== 10 goto chestloose
+if %input%== 11 goto chestloose
+if %input%== 12 goto chestloose
+if %input%== 13 goto chestloose
+if %input%== 14 goto chestloose
+if %input%== 15 goto chestloose
+if %input%== 16 goto chestloose
+if %input%== 17 goto chestloose
+if %input%== 18 goto chestloose
+if %input%== 19 goto chestloose
+if %input%== 20 goto chestloose
+if %input%== 21 goto chestloose
+if %input%== 22 goto chestloose
+if %input%== 23 goto chestloose
+if %input%== 24 goto chestloose
+if %input%== 25 goto chestloose
+if %input%== 26 goto chestloose
+if %input%== 27 goto chestloose
+if %input%== 28 goto chestloose
+if %input%== 29 goto chestloose
+if %input%== 30 goto chestloose
+if %input%== 31 goto chestloose
+if %input%== 32 goto chestloose
+if %input%== 33 goto chestloose
+if %input%== 34 goto chestloose
+if %input%== 35 goto chestloose
+if %input%== 36 goto chestloose
+if %input%== 37 goto chestloose
+if %input%== 38 goto chestloose
+if %input%== 39 goto chestloose
+if %input%== 40 goto chestloose
+if %input%== 41 goto chestloose
+if %input%== 42 goto chestloose
+if %input%== 43 goto chestloose
+if %input%== 44 goto chestloose
+if %input%== 45 goto chestloose
+if %input%== 46 goto chestloose
+if %input%== 47 goto chestloose
+if %input%== 48 goto chestloose
+if %input%== 49 goto chestloose
+if %input%== 50 goto chestloose
+if %input%== 51 goto chestloose
+if %input%== 52 goto chestloose
+if %input%== 53 goto chestloose
+if %input%== 54 goto chestloose
+if %input%== 55 goto chestloose
+if %input%== 56 goto chestloose
+if %input%== 57 goto chestloose
+if %input%== 58 goto chestloose
+if %input%== 59 goto chestloose
+if %input%== 60 goto chestloose
+if %input%== 61 goto chestloose
+if %input%== 62 goto chestloose
+if %input%== 63 goto chestloose
+if %input%== 64 goto chestloose
+if %input%== 65 goto chestloose
+if %input%== 66 goto chestloose
+if %input%== 67 goto chestloose
+if %input%== 68 goto chestloose
+if %input%== 69 goto chestwin
+if %input%== 70 goto chestloose
+if %input%== 71 goto chestloose
+if %input%== 72 goto chestloose
+if %input%== 73 goto chestloose
+if %input%== 74 goto chestloose
+if %input%== 75 goto chestloose
+if %input%== 76 goto chestloose
+if %input%== 77 goto chestloose
+if %input%== 78 goto chestloose
+if %input%== 79 goto chestloose
+if %input%== 80 goto chestloose
+if %input%== 81 goto chestloose
+if %input%== 82 goto chestloose
+if %input%== 83 goto chestloose
+if %input%== 84 goto chestloose
+if %input%== 85 goto chestloose
+if %input%== 86 goto chestloose
+if %input%== 87 goto chestloose
+if %input%== 88 goto chestloose
+if %input%== 89 goto chestloose
+if %input%== 90 goto chestloose
+if %input%== 91 goto chestloose
+if %input%== 92 goto chestloose
+if %input%== 93 goto chestloose
+if %input%== 94 goto chestloose
+if %input%== 95 goto chestloose
+if %input%== 96 goto chestloose
+if %input%== 97 goto chestloose
+if %input%== 98 goto chestloose
+if %input%== 99 goto chestloose
 
 :chestwriting
 
