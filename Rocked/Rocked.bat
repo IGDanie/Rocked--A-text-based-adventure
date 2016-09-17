@@ -442,6 +442,22 @@ set /p input=0What should we do?:
 if %input0%==1 goto invesvillage
 if %input0%==2 goto continuepathbyvillage
 
+:invesvillage
+cls
+echo Looking around the village you see all sort of wonders...
+ping localhost -n 2 >nul
+echo You see something sparkling in a close by building...
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Go see what the sparkle is.
+echo 2.) Exit the village and continue.
+set /p input=0What should we do?:
+if %input0%==1 goto sparklevillage
+if %input0%==2 goto continuepathbyvillage
+
+:sparklevillage
+
 :continuepathbyvillage
 
 :knownclimb
