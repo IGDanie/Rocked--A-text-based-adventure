@@ -427,6 +427,20 @@ if %input0%==1 goto knownclimb
 if %input0%==2 goto unknownclimb
 
 :villagevisit
+cls
+echo You decide to continue around the mountain and arrive at a village...
+ping localhost -n 2 >nul
+echo It seems deserted... Maybe your the first person here in 100's of years...
+ping localhost -n 2 >nul
+echo This could be a scientific breakthrough of our past.
+ping localhost -n 2 >nul
+echo.
+
+echo 1.) Investigate village further.
+echo 2.) Leave village and continue back on path.
+set /p input=0What should we do?:
+if %input0%==1 goto invesvillage
+if %input0%==2 goto continuepathbyvillage
 
 :continuepathbyvillage
 
