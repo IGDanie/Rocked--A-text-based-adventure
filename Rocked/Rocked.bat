@@ -745,6 +745,32 @@ echo.
 set /p input0=What should we do?:
 if %input0%==1 goto before
 if %input0%==2 goto killgame
+
+:chestloose
+cls
+echo It seems you have entered the wrong code!
+ping localhost -n 2 >nul 
+echo Upon entering the wrong code a giant rock golem appears and crushes you to death!
+ping localhost -n 2 >nul 
+echo Your dead... That was fun wasnt it...
+echo.
+echo.
+echo            000000 000000 0       0 000000    00000 0   0 000000 00000
+echo            0      0    0 00     00 0         0   0 0   0 0      0   0
+echo            0  000 000000 0 0   0 0 00000     0   0 0   0 00000  00000
+echo            0    0 0    0 0  0 0  0 0         0   0  0 0  0      0  0
+echo            000000 0    0 0   0   0 000000    00000   0   000000 0   0 
+echo.
+echo.
+
+echo.
+ping localhost -n 2 >nul 
+echo 1.)Start again!
+echo 2.)Close the game!
+echo.
+set /p input0=What should we do?:
+if %input0%==1 goto before
+if %input0%==2 goto killgame
 //gameover areas -----------------------------------------------------------------------
 
 :killgame
